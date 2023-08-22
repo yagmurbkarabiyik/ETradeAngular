@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AlertifyService, MessageType, Position } from 'src/app/services/admin/alertify.service';
+
 
 import { DashboardComponent } from './dashboard.component';
 

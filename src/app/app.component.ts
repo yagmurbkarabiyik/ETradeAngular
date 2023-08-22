@@ -10,6 +10,3 @@ export class AppComponent {
   title = 'ETradeClient';
 }
 
-$(document).ready(()=>{
-alert("Test")
-})
