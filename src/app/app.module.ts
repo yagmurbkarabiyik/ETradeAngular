@@ -10,10 +10,12 @@ import { ToastrModule } from 'ngx-toastr';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BaseComponent } from './base/base.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { DeleteDirective } from './directive/admin/delete.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,  ],
+    AppComponent,
+      ],
   imports: [
     BrowserModule, 
     BrowserAnimationsModule,
