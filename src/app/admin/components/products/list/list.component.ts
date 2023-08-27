@@ -19,7 +19,7 @@ export class ListComponent extends BaseComponent implements OnInit{
   constructor(spinner:NgxSpinnerService, private productService: ProductService, private alertifyService: AlertifyService){
     super(spinner)
   }
-  displayedColumns: string[] = ['name', 'stock', 'price', 'createdDate', 'updatedDate', 'edit', 'delete'];
+  displayedColumns: string[] = ['name', 'stock', 'price', 'createdDate', 'updatedDate', 'edit'];
   dataSource: MatTableDataSource<List_Product> =  null;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -51,6 +51,7 @@ export class ListComponent extends BaseComponent implements OnInit{
   async pageChanged(){
     await this.getProducts();
   }
+  
   async ngOnInit() {
     await this.getProducts();
   }

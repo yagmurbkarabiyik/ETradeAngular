@@ -15,6 +15,7 @@ import { DeleteDirective } from './directive/admin/delete.directive';
 @NgModule({
   declarations: [
     AppComponent,
+    
       ],
   imports: [
     BrowserModule, 
