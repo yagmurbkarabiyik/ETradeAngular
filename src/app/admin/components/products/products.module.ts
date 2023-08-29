@@ -22,11 +22,12 @@ import { DeleteDialogComponent } from 'src/app/dialogs/delete-dialog/delete-dial
     CreateComponent,
     ListComponent,
     DeleteDirective,
-    MatDialogModule,
     DeleteDialogComponent
   ],
   imports: [
     CommonModule,
+    MatDialogModule,
+
     RouterModule.forChild([
       {path:"", component: ProductsComponent}
     ]),

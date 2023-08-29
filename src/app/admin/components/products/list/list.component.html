@@ -28,29 +28,17 @@
 
            
       <ng-container matColumnDef="edit">
-        <th mat-header-cell *matHeaderCellDef> Edit </th>
-        <td mat-cell *matCellDef="let element"> {{element.edit}} </td>
+        <th mat-header-cell *matHeaderCellDef>  </th>
+        <td mat-cell *matCellDef="let element"><img src="../../../../../assets/edit.png" width="30"> </td>
       </ng-container>  
 
       <ng-container matColumnDef="delete">
-        <th mat-header-cell *matHeaderCellDef width="30"> Delete </th>
-        <td mat-cell *matCellDef="let element"> 
-          appDelete
-          [id]="element.id"
-          (callback)="getProducts()"
-          controller="products"
+        <th mat-header-cell *matHeaderCellDef>  </th>
+        <td  [id]="element.id" mat-cell *matCellDef="let element" appDelete  (callBack)="getProducts()" controller="products">
+          <!-- <img src="../../../../../assets/delete.png" width="30"> -->
         </td>
        
       </ng-container>  
-
-
-       <!-- <ng-container matColumnDef="delete">
-        <td element.id" mat-cell *matCellDef="let element" appDelete (callBack)="getProducts()">Delete</td>
-        <td mat-cell *matCellDef="let element"> {{element.delete}}</td>
-
-      </ng-container>  -->
-
- 
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
