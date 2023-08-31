@@ -17,7 +17,7 @@ export class CustomToastrService {
 
 export class ToastrOptions{
   messageType : ToastrMessageType;
-  position: ToasterPosition;
+  position: ToastrPosition;
 }
 
 
@@ -28,7 +28,7 @@ export enum ToastrMessageType{
   Error = "error"
 }
 
-export enum ToasterPosition{
+export enum ToastrPosition{
   TopRight= "toast-top-right",
   BottomRight = "toast-bottom-right",
   BottomLeft = "toast-bottom-left",

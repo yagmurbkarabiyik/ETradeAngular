@@ -11,10 +11,11 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { BaseComponent } from './base/base.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { DeleteDirective } from './directive/admin/delete.directive';
+import { FileUploadDialogComponent } from './dialogs/file-upload-dialog/file-upload-dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
     
       ],
   imports: [
@@ -22,7 +23,6 @@ import { DeleteDirective } from './directive/admin/delete.directive';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     AppRoutingModule,
-    AdminModule,
     UiModule,
     NgxSpinnerModule,
     HttpClientModule
