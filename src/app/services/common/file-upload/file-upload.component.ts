@@ -24,7 +24,7 @@ export class FileUploadComponent {
     private dialogService: DialogService,
     private spinner: NgxSpinnerService) { }
 
-   public files: NgxFileDropEntry[];
+  public files: NgxFileDropEntry[];
 
   @Input() options: Partial<FileUploadOptions>;
 
@@ -59,7 +59,7 @@ export class FileUploadComponent {
                 position: Position.TopRight
               })
           } else {
-            this.customToastrService.message(message, "Success.", {
+            this.customToastrService.message(message, "Başarılı.", {
               messageType: ToastrMessageType.Success,
               position: ToastrPosition.TopRight
             })
@@ -68,7 +68,7 @@ export class FileUploadComponent {
 
         }, (errorResponse: HttpErrorResponse) => {
 
-          const message: string = "An unexpected error was encountered while uploading files.";
+          const message: string = "Dosyalar yüklenirken beklenmeyen bir hatayla karşılaşılmıştır.";
 
           this.spinner.hide(SpinnerType.BallAtom)
           if (this.options.isAdminPage) {
@@ -79,7 +79,7 @@ export class FileUploadComponent {
                 position: Position.TopRight
               })
           } else {
-            this.customToastrService.message(message, "Fail.", {
+            this.customToastrService.message(message, "Başarsız.", {
               messageType: ToastrMessageType.Error,
               position: ToastrPosition.TopRight
             })
@@ -90,17 +90,6 @@ export class FileUploadComponent {
     });
   }
 
-  //openDialog(afterClosed: any): void {
-  //  const dialogRef = this.dialog.open(FileUploadDialogComponent, {
-  //    width: '250px',
-  //    data: FileUploadDialogState.Yes,
-  //  });
-
-  //  dialogRef.afterClosed().subscribe(result => {
-  //    if (result == FileUploadDialogState.Yes)
-  //      afterClosed();
-  //  });
-  //}
 
 }
 

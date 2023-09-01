@@ -21,15 +21,11 @@ import { DialogModule } from 'src/app/dialogs/dialog/dialog.module';
   declarations: [
     ProductsComponent,
     CreateComponent,
-    ListComponent,
-    DeleteDirective
+    ListComponent
     
   ],
   imports: [
     CommonModule,
-    MatDialogModule,
-    
-
     RouterModule.forChild([
       {path:"", component: ProductsComponent}
     ]),
@@ -39,9 +35,10 @@ import { DialogModule } from 'src/app/dialogs/dialog/dialog.module';
     MatButtonModule,
     MatTableModule,
     MatPaginatorModule,
-    DialogModule,
-    FileUploadModule,
-    
+    // DialogModule,
+    // FileUploadModule,
+
+    // DeleteDirectiveModule
   ]
 })
 export class ProductsModule { }
